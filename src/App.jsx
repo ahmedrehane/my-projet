@@ -11,10 +11,13 @@ function App() {
   return ( 
     <>
     <Nav/>
+    
+    <Recommand/>
+
 
     <Product/>
 
-    <Recommand/>
+    
 
     
 
