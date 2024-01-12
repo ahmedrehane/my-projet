@@ -3,7 +3,10 @@ import './Prix.css'
 const Prix = () =>{
     return(
         <>
-        <div>Prix</div>
+        <div>
+        
+        </div>
+
         </>
     )
 }
