@@ -10,7 +10,8 @@ const Categorie = () =>{
             <label className='sidebar-label-container'>
             <input type='radio'name='test' />
             <span className='checkmark'></span>All
-            </label><label className='sidebar-label-container'>
+            </label>
+            <label className='sidebar-label-container'>
             <input type='radio'name='test' />
             <span className='checkmark'></span>Sneakers
             
