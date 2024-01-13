@@ -25,7 +25,10 @@ import Sidebar from './Sidebar/Sidebar';
     toLocaleLowerCase().indexOf(query.toLocaleLowerCase()!== -1)
     )
     //-----------Radio Filter------------
-
+    const handleChange = event =>{
+      setSelectedCategorie(event.target.value)
+    }
+    //-----------Buttons Filter------------
       return(
 
       
