@@ -1,11 +1,11 @@
+
 import { AiFillStar } from 'react-icons/ai'
 import {BsFillBagHeartFill} from 'react-icons/bs'
-
 
 const Card = () =>{
     return(
         <>
-        <section className='card'>
+     <section className='card'>
      <img src='https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg'
        alt='shoe'
       className='card-img'
