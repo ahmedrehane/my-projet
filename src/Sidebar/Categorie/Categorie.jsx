@@ -8,10 +8,10 @@ const Categorie = ({handlChange}) =>{
             <h2 className='sidebar-title'>Categorie</h2>
 
             <div>
+
            <label className='sidebar-label-container'>
             <input onChange={handlChange} type='radio' value="" name='test' />
             <span className='checkmark'></span>All
-
             
            </label>
 
