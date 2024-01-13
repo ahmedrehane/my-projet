@@ -1,10 +1,11 @@
 
-const Input = () =>{
+const Input = ({handlChange, value, title, name , color}) =>{
     return(
         <>
          <label className='sidebar-label-container'>
-            <input type='radio'name='test' />
-            <span className='checkmark'></span>All
+            <input onChange={handlChange} type="radio" value={value} name={name} />
+            <span className='checkmark' style={{backgroundColor:color}}></span>
+            {title}
             </label>
         </>
     )
