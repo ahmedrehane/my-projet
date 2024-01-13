@@ -6,17 +6,17 @@ import Sidebar from './Sidebar/Sidebar';
 
   //Database
   import product from './db/Data'
+  import Card from './Components/Card';
 
   
   
 
   function App() {
   const[selectedCategorie, setSelectedCategorie] = useState(null)
+  const[query, setQuery] = useState("")
 
 
   //-----------Input Filter------------
-  const[query, setQuery] = useState("")
-
   const handleInputChange = event => {
     setQuery(event.target.value)
    };  
@@ -29,10 +29,63 @@ import Sidebar from './Sidebar/Sidebar';
       setSelectedCategorie(event.target.value)
     }
     //-----------Buttons Filter------------
-      return(
+    const handleClick = event =>{
+      setSelectedCategorie(event.target.value)
+    }
+      function filterdData(products, selected , query){
+        let filteredProduct = products
 
+        //Filtering Input Items
+        if(query){
+          filteredProduct = filteredItems
+
+        }
+
+        //Selected Filter 
+        if(selected){
+          filteredProduct = filteredProduct.filter(
+          
+            ({category,color,company, newPrice,title}) =>
+             category === selected ||
+             color === selected ||
+          company === selected ||
+            newPrice == selected ||
+             title === selected 
+
+          
+          )
+        }
+
+        return filteredProduct.map(({img,title,star,reviews,prevPrice,newPrice})=>(
+
+        <Card
+        key={Math.random()}
+        img ={img}
+        title ={title}
+        star ={star}
+        reviews = {reviews}
+        newPrice = {newPrice}
+        prevPrice = {prevPrice} 
+        />
+  
+    
+
+        
+        )
+
+        )
+      }
+
+     const result=  filterdData(product,selectedCategorie,query)
+
+
+
+
+ 
       
-      <>
+
+      return(
+        <>
     
       <Sidebar/>
 
@@ -52,4 +105,5 @@ import Sidebar from './Sidebar/Sidebar';
 }
 
 export default App
+      
 
