@@ -87,7 +87,7 @@ import Sidebar from './Sidebar/Sidebar';
       return(
         <>
     
-      <Sidebar/>
+      <Sidebar handlechange={handleChange}/>
 
       <Nav/>
 

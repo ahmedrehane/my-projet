@@ -3,7 +3,8 @@ import Prix from './Prix/Prix'
 import Color from './Color/Color'
 import './Sidebar.css'
 
-const Sidebar = () =>{
+const Sidebar = ({handleChange}) =>{
+    
     return(
         <>
         <section className='sidebar'>
@@ -11,9 +12,9 @@ const Sidebar = () =>{
             <h1>🛒</h1>
             </div>
 
-            <Categorie/>
-            <Prix/>
-            <Color/>
+            <Categorie handleChange={handleChange}/>
+            <Prix handleChange={handleChange}/>
+            <Color handleChange={handleChange}/>
 
         </section>
         </>

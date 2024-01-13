@@ -2,6 +2,7 @@ import Input from '../../Components/Input'
 import './Prix.css'
 
 const Prix = () =>{
+
     return(
         <>
         <div className='ml'>
