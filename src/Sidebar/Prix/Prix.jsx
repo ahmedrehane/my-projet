@@ -43,7 +43,7 @@ const Prix = (handlChange) =>{
 
             handlChange={handlChange}
             value={200}
-            title='Over $150'
+            title='Over '
             name='test2'
             
             />
