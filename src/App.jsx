@@ -81,6 +81,7 @@ import Sidebar from './Sidebar/Sidebar';
 
 
 
+
  
       
 
@@ -89,11 +90,11 @@ import Sidebar from './Sidebar/Sidebar';
     
       <Sidebar handlechange={handleChange}/>
 
-      <Nav/>
+      <Nav query = {query} handleInputChange={handleInputChange}/>
 
-    <Recommand/>
+    <Recommand handleChange={handleClick}/>
 
-    <Product/>
+    <Product result={result} />
     
 
 

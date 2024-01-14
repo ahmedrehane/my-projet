@@ -28,8 +28,8 @@ const Categorie = ({handlChange}) =>{
            <Input
            
            handlechange={handlChange}
-           value='falts'
-           title='Falts'
+           value='flats'
+           title='Flats'
            name='test'
 
           />

@@ -10,7 +10,7 @@ const Prix = (handlChange) =>{
 
             
             <label className='sidebar-label-container'>
-            <input onChange={handlChange} type='radio' value="" name='test2' />
+            <input onchange={handlChange} type='radio' value="" name='test2' />
             <span className='checkmark'></span>All
             
            </label>

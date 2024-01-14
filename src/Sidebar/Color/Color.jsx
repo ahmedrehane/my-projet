@@ -45,7 +45,7 @@ import './Color.css'
             />
 
             <label classname= 'sidebar-label-container'>
-                <input type='radio' onchange={handlChange} value='white' name='test1'/>
+                <input type='radio' onChange={handlChange} value='white' name='test1'/>
                 <span classname='checkmark '
                  style={{
                     background:'white',

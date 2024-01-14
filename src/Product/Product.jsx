@@ -1,26 +1,17 @@
-import Card from '../Components/Card'
+
 import './Product.css'
 
-const Product = () =>{
+const Product = ({result}) =>{
     return(
         <>
-     <section className='card-container'>
+     <section className='card-container'>{result}</section>
 
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      
       
 
      
         
         
-        </section>
+
         </>
     )
 }
