@@ -3,6 +3,7 @@ import Nav from './Navigateur/Nav'
 import Product from './product/product';
 import Recommand from './Recommand/Recommand';
 import Sidebar from './Sidebar/Sidebar';
+import'./index.css'
 
   //Database
   import product from './db/Data'
@@ -22,7 +23,7 @@ import Sidebar from './Sidebar/Sidebar';
    };  
 
    const filteredItems = product.filter(products=>products.title.
-    toLocaleLowerCase().indexOf(query.toLocaleLowerCase()!== -1)
+    toLocaleLowerCase().indexOf(query.toLocaleLowerCase())!== -1
     )
     //-----------Radio Filter------------
     const handleChange = event =>{

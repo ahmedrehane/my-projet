@@ -6,7 +6,7 @@ import './Color.css'
         <>
         <div>
         <label className='sidebar-label-container'>
-            <input onChange={handlChange} type='radio' value="" name='test' />
+            <input onChange={handlChange} type='radio' value="" name='test3' />
             <span className='checkmark all'></span>All
             
            </label>
@@ -23,7 +23,7 @@ import './Color.css'
            handlChange={handlChange}
            value='blue'
            title='Blue'
-           name='test1'
+           name='test3'
            color='blue'
 
             />
@@ -31,7 +31,7 @@ import './Color.css'
            handlChange={handlChange}
            value='red'
            title='Red'
-           name='test1'
+           name='test3'
            color='red'
 
             />
@@ -39,13 +39,13 @@ import './Color.css'
            handlChange={handlChange}
            value='green'
            title='Green'
-           name='test1'
+           name='test3'
            color='green'
 
             />
 
             <label classname= 'sidebar-label-container'>
-                <input type='radio' onChange={handlChange} value='white' name='test1'/>
+                <input type='radio' onChange={handlChange} value='white' name='test3'/>
                 <span classname='checkmark '
                  style={{
                     background:'white',
