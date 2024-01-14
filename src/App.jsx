@@ -92,7 +92,9 @@ import Sidebar from './Sidebar/Sidebar';
 
       <Nav query = {query} handleInputChange={handleInputChange}/>
 
-    <Recommand handleChange={handleClick}/>
+    <Recommand handleClick={handleClick}/>
+    
+    
 
     <Product result={result} />
     

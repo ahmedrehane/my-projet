@@ -1,6 +1,6 @@
 import './Recommand.css'
 
-const Recommand = () =>{
+const Recommand = ({}) =>{
     return(
         <>
         <div>
